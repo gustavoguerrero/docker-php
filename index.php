@@ -1,5 +1,6 @@
 <?php
-
+    echo "Hola Mundo";
+/*
 try {
     echo 'Current PHP version: ' . phpversion();
     echo '<br />';
@@ -17,3 +18,4 @@ try {
     echo 'Error: ' . $t->getMessage();
     echo '<br />';
 }
+*/
