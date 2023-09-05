@@ -1,16 +1,47 @@
 <?php
     
+    require_once("autoload.php");
+    (new Autoload())->cargarRutas();
+
+    $cliente = new Cliente();
+    $empleado = new Empleado();
+
+    $cliente->nombre = "Jose";
+    $empleado->nombre = "Bob";
+
+
+
+    echo $cliente->saludar($empleado);
+
+    /* ####CLASES ANONIMAS ####
+    $claseAnonima = new class{
+        public $nombre;
+        
+        function suma(){
+            echo 10 + 3;
+        }
+    };
+
+    $claseAnonima->suma();
+    */
+
+  
+    /*   #### CLASES OBJETOS ###
     declare(strict_types=1);
     require_once("persona.php");
 
     $jose = new Persona();
     $jose->nombre = "Jose";
     $jose->apellido = "Lopez";
+    $jose->__set("telefono", "099350715");
+
+    #echo $jose->__get("telefono");
     $jose->hablar("politica");
 
     $sofia = new Persona();
     $sofia->nombre = "Sofia";
-    $sofia->hablar("K-POP");
+    */
+    
 
     /* ### FUNCIONES ###
 
