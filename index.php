@@ -3,16 +3,18 @@
     require_once("autoload.php");
     (new Autoload())->cargarRutas();
 
-    $cliente = new Cliente();
+    $modelo= new Modelo();
+    var_dump($modelo);
+    /*$cliente = new Cliente();
     $empleado = new Empleado();
 
     $cliente->nombre = "Jose";
     $empleado->nombre = "Bob";
-
+    
 
 
     echo $cliente->saludar($empleado);
-
+    */
     /* ####CLASES ANONIMAS ####
     $claseAnonima = new class{
         public $nombre;

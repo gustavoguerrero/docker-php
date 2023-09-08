@@ -1,6 +1,6 @@
 <?php
-require_once("Persona.php");
-require_once("Empleado.php");
+    require_once("autoload.php");
+    (new Autoload())->cargarRutas();
 
     class Cliente extends Persona{
 
